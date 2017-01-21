@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///SETS STATES AND INITIAL VARIABLES
 
-Init_Speed = 12;
+Init_Speed = 6;
 Speed = Init_Speed;
 Jump_Force = 12;
 
@@ -78,10 +78,14 @@ Key_Jump = keyboard_check_pressed(vk_up);
 switch (Current_State) {
 
     case Player_States.ON_GROUND:
-        Player_OnGround();
+        Player_Gravity();
         Player_Collision(true, true);
-        break;
+        H_Speed = 0;
+        break
     case Player_States.ON_AIR:
+        Player_On_Air();
+        Player_Gravity();
+        Player_Collision(true, true);
         break;
     case Player_States.DEATH:
         break;
