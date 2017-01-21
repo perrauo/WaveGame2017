@@ -84,19 +84,12 @@ Current_State = Player_States.ON_GROUND;
             <kind>1</kind>
             <string>///SWITCHES STATES AND CHECKS INPUT
 
-Key_Right = keyboard_check(vk_right);
-Key_Left = keyboard_check(vk_left);
-Key_Jump_Hold = keyboard_check(vk_up);
-Key_Jump = keyboard_check_pressed(vk_up);
-Key_Jump_Released = keyboard_check_released(vk_up);
-
-
 switch (Current_State) {
 
     case Player_States.ON_GROUND:
         Player_Gravity();
         Player_Collision(true, true);
-        H_Speed *= 0.7;
+        H_Speed *= 0.95;
         image_index = 0;
         image_speed = 0;
         break
@@ -111,6 +104,8 @@ switch (Current_State) {
     default:
         break;
 }
+
+Collide_With_Wave();
 </string>
           </argument>
         </arguments>
@@ -131,12 +126,15 @@ switch (Current_State) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///call on spawn wave scr
-
+            <string>///Calls on Various scripts
+//emits particles on landing
+scr_ParticleOnLanding();
 height = Player_CalculateHeight();
 
- //call on spawn wave //TODO: set wave size relative to jump
-    scr_SpawnWave(height);
+//call on spawn wave //TODO: set wave size relative to jump
+scr_SpawnWave(height);
+
+
 </string>
           </argument>
         </arguments>

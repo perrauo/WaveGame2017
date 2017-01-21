@@ -30,7 +30,9 @@
 /*wave_size = 1;
 wave_speed = 1;*/
 
-Speed = 3;
+Speed = 0;
+
+Init_Speed = 3;
 
 sprite_index = spr_wave_size10;
 
@@ -40,6 +42,8 @@ image_xscale = Init_Scale;
 image_yscale = image_xscale;
 
 image_speed = 0.5;
+
+
 
 /*
 sprite_index = spr_wave_size10; //varies depending on the size

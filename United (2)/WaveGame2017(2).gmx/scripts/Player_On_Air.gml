@@ -4,5 +4,5 @@ if (Key_Right) {
 } else if (Key_Left) {
     H_Speed = -Speed;
 } else {
-    H_Speed = 0;
+    H_Speed *= 0.95;
 }

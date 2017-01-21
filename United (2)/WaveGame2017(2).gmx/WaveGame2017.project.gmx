@@ -3,7 +3,9 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\Essential Scripts</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_DebugPlayer</sprite>
@@ -23,6 +25,10 @@
       <sprite>sprites\spr_wave_size5</sprite>
       <sprite>sprites\spr_wave_size10</sprite>
     </sprites>
+    <sprites name="gr_particles">
+      <sprite>sprites\spr_particle1</sprite>
+    </sprites>
+    <sprite>sprites\spr_Blood</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -33,6 +39,19 @@
     <script>scripts\scr_SpawnWave.gml</script>
     <script>scripts\scr_between.gml</script>
     <script>scripts\Player_CalculateHeight.gml</script>
+    <scripts name="scr_particles">
+      <script>scripts\part_1_init.gml</script>
+      <script>scripts\scr_ParticleOnLanding.gml</script>
+    </scripts>
+    <script>scripts\Input_Set_Player2.gml</script>
+    <script>scripts\Input_Set_Player1.gml</script>
+    <scripts name="Essential Scripts">
+      <scripts name="Approach Value">
+        <script>scripts\approach.gml</script>
+      </scripts>
+    </scripts>
+    <script>scripts\Create_Blood.gml</script>
+    <script>scripts\Collide_With_Wave.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_ParentPlayer</object>
@@ -40,6 +59,15 @@
     <object>objects\obj_GameManager</object>
     <object>objects\obj_Wave</object>
     <object>objects\obj_Target</object>
+    <objects name="gr_particles">
+      <object>objects\obj_part_1</object>
+    </objects>
+    <object>objects\obj_Player1</object>
+    <object>objects\obj_Player2</object>
+    <objects name="Blood System">
+      <object>objects\obj_Canvas</object>
+      <object>objects\obj_BloodDrop</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Test</room>

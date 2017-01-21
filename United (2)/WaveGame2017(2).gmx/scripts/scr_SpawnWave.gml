@@ -1,7 +1,6 @@
 ///SpawnWave(int WaveSize)
-show_debug_message(height);
 height = argument0;
-
+//determine wave size based on the character's jump height
 if(scr_between(height,60,100))
 wave_size = 10;//size 10
 else if(scr_between(height,55,60))
@@ -27,9 +26,9 @@ if (place_meeting(x, y+1, obj_Solid)) //landing
 { 
    if(!landed)
 {
-    var w = instance_create(x+obj_ParentPlayer.sprite_width/2, y+obj_ParentPlayer.sprite_height/2, obj_Wave);
-    w.wave_size = wave_size;
-    
+    my_w = instance_create(x+obj_ParentPlayer.sprite_width/2, y+17, obj_Wave);
+    my_w.wave_size = wave_size;
+    my_w.Speed = my_w.Init_Speed*wave_Direction;
     landed = 1;
 }
        
