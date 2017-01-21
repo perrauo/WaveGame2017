@@ -8,7 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\spr_DebugPlayer</sprite>
     <sprite>sprites\spr_DebugGround</sprite>
-    <sprite>sprites\sprite2</sprite>
+    <sprite>sprites\spr_PlaceHolder</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
