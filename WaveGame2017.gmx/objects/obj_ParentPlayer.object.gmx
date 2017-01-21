@@ -46,7 +46,6 @@ V_Speed = 0;
 
 Min_Jump_Height = 10;
 
-
 enum Player_States {
     ON_GROUND,
     ON_AIR,
@@ -54,10 +53,6 @@ enum Player_States {
 }
 
 Current_State = Player_States.ON_GROUND;
-
-
-//Wave mechanic
-landed = 0; //has the character just landed so we can spawn a wave (initially false)
 </string>
           </argument>
         </arguments>
@@ -86,8 +81,6 @@ Key_Right = keyboard_check(vk_right);
 Key_Left = keyboard_check(vk_left);
 Key_Jump_Hold = keyboard_check(vk_up);
 Key_Jump = keyboard_check_pressed(vk_up);
-
-
 
 
 switch (Current_State) {
