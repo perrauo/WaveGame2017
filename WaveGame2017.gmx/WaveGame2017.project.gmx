@@ -8,17 +8,20 @@
   <sprites name="sprites">
     <sprite>sprites\spr_DebugPlayer</sprite>
     <sprite>sprites\spr_DebugGround</sprite>
+    <sprite>sprites\spr_wave</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\Player_OnGround.gml</script>
     <script>scripts\Player_Collision.gml</script>
+    <script>scripts\scr_SpawnWave.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_ParentPlayer</object>
     <object>objects\obj_Solid</object>
     <object>objects\obj_GameManager</object>
+    <object>objects\obj_wave</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Test</room>
