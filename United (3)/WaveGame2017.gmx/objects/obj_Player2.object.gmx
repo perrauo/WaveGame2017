@@ -104,6 +104,23 @@ do
     global.Player2_Color_Number = random(255);
 }until(global.Player2_Color != global.Player1_Color_Number)
 
+
+gap = global.Player2_Color_Number - global.Player1_Color_Number;
+gap_Length = 30;
+
+if (gap &lt; 0) and (gap &gt; -gap_Length){
+    global.Player2_Color_Number = global.Player2_Color_Number + gap_Length*2;
+    if (global.Player2_Color_Number &gt; 255) {
+        global.Player2_Color_Number = global.Player2_Color_Number - 255;
+    }
+} else if (gap &gt; 0) and (gap &lt; gap_Length){
+    global.Player2_Color_Number = global.Player2_Color_Number + gap_Length;
+    if (global.Player2_Color_Number &gt; 255) {
+        global.Player2_Color_Number = global.Player2_Color_Number - 255;
+    }
+}
+
+
 global.Player2_Color = make_color_hsv(global.Player2_Color_Number, 200, 200);
 instance_create(160, 100, obj_Player2);
 

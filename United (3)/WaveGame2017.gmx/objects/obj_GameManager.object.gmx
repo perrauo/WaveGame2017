@@ -49,6 +49,11 @@ global.Player2_Score = 0;
 
 
 
+//add game music
+audio_play_sound(snd_artblock, 2,true);
+
+
+
 
 
 
@@ -75,7 +80,7 @@ global.Player2_Score = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>///step
 x = room_width/2;
 y = room_height/2;
 

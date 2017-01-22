@@ -49,6 +49,9 @@ timer1 = 0;
 lim1 = 120;
 
 
+instance_create(room_width-100,room_height-60, obj_credit);
+
+
 </string>
           </argument>
         </arguments>
@@ -108,10 +111,13 @@ if(scr_checkAnyGamepadButton())
 }
 else
 {
-    keyboard_check(vk_anykey);
+    if(keyboard_check_pressed(vk_anykey))
+    game_restart();
 }
 
+
 }
+
 </string>
           </argument>
         </arguments>

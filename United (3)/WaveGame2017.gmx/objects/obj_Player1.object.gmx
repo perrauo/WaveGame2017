@@ -110,6 +110,22 @@ do
     //show_debug_message("Player1: " + string(global.Player1_Color_Number));
     //show_debug_message("Player2: " + string(global.Player2_Color_Number));
 }until(global.Player1_Color != global.Player2_Color_Number)
+
+gap = global.Player1_Color_Number - global.Player2_Color_Number;
+gap_Length = 30;
+
+if (gap &lt; 0) and (gap &gt; -gap_Length){
+    global.Player1_Color_Number = global.Player1_Color_Number + gap_Length*2;
+    if (global.Player1_Color_Number &gt; 255) {
+        global.Player1_Color_Number = global.Player1_Color_Number - 255;
+    }
+} else if (gap &gt; 0) and (gap &lt; gap_Length){
+    global.Player1_Color_Number = global.Player1_Color_Number + gap_Length;
+    if (global.Player1_Color_Number &gt; 255) {
+        global.Player1_Color_Number = global.Player1_Color_Number - 255;
+    }
+}
+
 global.Player1_Color = make_color_hsv(global.Player1_Color_Number, 200, 200);
 instance_create(120, 100, obj_Player1);
 

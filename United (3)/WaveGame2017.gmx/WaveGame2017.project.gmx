@@ -9,6 +9,8 @@
   <sounds name="sound">
     <sound>sound\shortWave</sound>
     <sound>sound\MenuPress</sound>
+    <sound>sound\sound2</sound>
+    <sound>sound\snd_artblock</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_walkCycle</sprite>
@@ -44,6 +46,7 @@
       <sprite>sprites\spr_menuArrow</sprite>
       <sprite>sprites\spr_score</sprite>
       <sprite>sprites\spr_playerWin</sprite>
+      <sprite>sprites\spr_musicCredit</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -98,6 +101,7 @@
       <object>objects\obj_menuComponent</object>
       <object>objects\obj_playerWin</object>
       <object>objects\obj_endScreen</object>
+      <object>objects\obj_credit</object>
     </objects>
   </objects>
   <rooms name="rooms">
