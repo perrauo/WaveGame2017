@@ -41,6 +41,7 @@ instance_deactivate_object(obj_scoreBoard);
 instance_deactivate_object(obj_ctrl_audienceManager);
 instance_deactivate_object(obj_Wave);
 instance_deactivate_object(obj_part_1);
+instance_deactivate_object(obj_bleacher);
 
 
 

@@ -42,14 +42,18 @@
     <sprites name="gr_GUI">
       <sprite>sprites\spr_menuItems</sprite>
       <sprite>sprites\spr_menu</sprite>
+      <sprite>sprites\spr_background</sprite>
       <sprite>sprites\spr_endScreen</sprite>
       <sprite>sprites\spr_menuArrow</sprite>
       <sprite>sprites\spr_score</sprite>
       <sprite>sprites\spr_playerWin</sprite>
       <sprite>sprites\spr_musicCredit</sprite>
+      <sprite>sprites\spr_bleacher</sprite>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_bleachers</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\Player_Gravity.gml</script>
@@ -103,6 +107,7 @@
       <object>objects\obj_endScreen</object>
       <object>objects\obj_credit</object>
     </objects>
+    <object>objects\obj_bleacher</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Test</room>

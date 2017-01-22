@@ -157,12 +157,15 @@ global.Player2_Score++;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
+            <string>///draw event
+draw_self();
 
 draw_set_color(global.Player1_Color);
 
 draw_circle(x, room_height-30 ,8, false);
-draw_text_colour(x - 4, room_height-36, "1", c_black, c_black, c_black, c_black, 1);
+draw_sprite_ext(spr_score, 1,x,room_height-30,.5,.5,0,c_black,1);
+
+//draw_text_colour(x - 4, room_height-36, "1", c_black, c_black, c_black, c_black, 1);
 </string>
           </argument>
         </arguments>

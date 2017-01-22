@@ -94,10 +94,10 @@ if(player1_score == 10) || (player2_score == 10)
             <string>///draw diff numbers
 
 //first digit   (player 2)
-draw_sprite_ext(sprite_index, player1_score,x-20,y,1,1,0,global.Player1_Color, 1);
+draw_sprite_ext(sprite_index, player1_score,x-30,y,1,1,0,global.Player1_Color, 1);
 
 //second digit  (player 2)
-draw_sprite_ext(sprite_index, player2_score,x+20,y,1,1,0,global.Player2_Color, 1);
+draw_sprite_ext(sprite_index, player2_score,x+30,y,1,1,0,global.Player2_Color, 1);
 </string>
           </argument>
         </arguments>
