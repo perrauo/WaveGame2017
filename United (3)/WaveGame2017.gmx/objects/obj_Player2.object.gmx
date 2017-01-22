@@ -65,6 +65,7 @@ if (H_Speed != 0) {
     wave_Direction = -1;
 }
 
+
 </string>
           </argument>
         </arguments>
@@ -91,6 +92,9 @@ if (H_Speed != 0) {
 obj_GameManager.Shake = 30;
 
 Create_Blood(-global.Player_Color, "Right");
+
+
+scr_spawnPlayer();
 </string>
           </argument>
         </arguments>

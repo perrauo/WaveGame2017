@@ -54,7 +54,7 @@ menu = instance_find(obj_menu, 0);
           <argument>
             <kind>1</kind>
             <string>///get player inputs
-show_debug_message(menu.selected_item);
+//show_debug_message(menu.selected_item);
 
 if(keyboard_check_pressed(vk_down)) &amp;&amp; (target_reached)
 {
