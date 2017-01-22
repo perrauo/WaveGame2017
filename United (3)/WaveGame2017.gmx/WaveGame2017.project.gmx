@@ -37,7 +37,10 @@
     <sprites name="gr_GUI">
       <sprite>sprites\spr_menuItems</sprite>
       <sprite>sprites\spr_menu</sprite>
+      <sprite>sprites\spr_endScreen</sprite>
       <sprite>sprites\spr_menuArrow</sprite>
+      <sprite>sprites\spr_score</sprite>
+      <sprite>sprites\spr_playerWin</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -63,7 +66,7 @@
     <script>scripts\UpdateTimer.gml</script>
     <script>scripts\Input_Set_Player1.gml</script>
     <script>scripts\Input_Set_Player2.gml</script>
-    <script>scripts\scr_spawnPlayer.gml</script>
+    <script>scripts\scr_scareAudience.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_spectator</object>
@@ -84,10 +87,13 @@
     </objects>
     <object>objects\Timer</object>
     <objects name="gr_GUI">
+      <object>objects\obj_scoreBoard</object>
       <object>objects\obj_menu</object>
       <object>objects\obj_menuArrow</object>
       <object>objects\obj_menuItem</object>
       <object>objects\obj_menuComponent</object>
+      <object>objects\obj_playerWin</object>
+      <object>objects\obj_endScreen</object>
     </objects>
   </objects>
   <rooms name="rooms">

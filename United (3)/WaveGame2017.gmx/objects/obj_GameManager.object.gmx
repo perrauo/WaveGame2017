@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>///game manager init
 
 randomize();
 
@@ -41,6 +41,18 @@ Shake = 0;
 
 global.gp[0] = false;
 global.gp[1] = false;
+
+
+//scoring system
+global.Player1_Score = 0;
+global.Player2_Score = 0;
+
+
+
+
+
+
+
 </string>
           </argument>
         </arguments>

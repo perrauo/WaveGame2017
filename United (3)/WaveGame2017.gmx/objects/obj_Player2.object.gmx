@@ -94,9 +94,13 @@ obj_GameManager.Shake = 30;
 Create_Blood(global.Player2_Color, "Right");
 
 global.Player2_Color = make_color_hsv(random(255), 200, 200);
-instance_create(160, 20, obj_Player2);
+instance_create(160, 100, obj_Player2);
 
-scr_spawnPlayer();
+scr_scareAudience();
+
+
+//keeping track of score
+global.Player1_Score++;
 </string>
           </argument>
         </arguments>
