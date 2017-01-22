@@ -1,7 +1,8 @@
 
 
 if (place_meeting(x, y+1, obj_Solid)) //landing
-{ 
+{
+    //show_debug_message("landing");
     Animation_State = Animation_States.IDLE;
     Current_State = Player_States.ON_GROUND;
     Num_Jumps = 0;

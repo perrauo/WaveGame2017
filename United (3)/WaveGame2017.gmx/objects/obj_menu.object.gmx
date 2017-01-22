@@ -94,7 +94,7 @@ switch (selected_item)
    if(key_start)
    {
         instance_activate_all();
-        
+        audio_play_sound(MenuPress, 10, false);
    }
  
    break;

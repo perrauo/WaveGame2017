@@ -65,6 +65,10 @@ if (H_Speed != 0) {
 } else {
     wave_Direction = 1;
 }
+/*if(Key_Dash_Released)
+{
+    scr_Dash();
+}*/
 </string>
           </argument>
         </arguments>
@@ -96,9 +100,17 @@ if(x &gt; 280)
     Create_Blood(global.Player1_Color, "Right");
 }
 else
-Create_Blood(global.Player1_Color, "Left");
+{
+    Create_Blood(global.Player1_Color, "Left");
+}
 
-global.Player1_Color = make_color_hsv(random(255), 200, 200);
+do
+{
+    global.Player1_Color_Number = random(255);
+    //show_debug_message("Player1: " + string(global.Player1_Color_Number));
+    //show_debug_message("Player2: " + string(global.Player2_Color_Number));
+}until(global.Player1_Color != global.Player2_Color_Number)
+global.Player1_Color = make_color_hsv(global.Player1_Color_Number, 200, 200);
 instance_create(120, 100, obj_Player1);
 
 
@@ -134,6 +146,7 @@ global.Player2_Score++;
 draw_set_color(global.Player1_Color);
 
 draw_circle(x, room_height-30 ,8, false);
+draw_text_colour(x - 4, room_height-36, "1", c_black, c_black, c_black, c_black, 1);
 </string>
           </argument>
         </arguments>

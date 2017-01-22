@@ -54,14 +54,14 @@ population = ds_stack_create(); //create a population
 
    offset = 0;//random_range(-20, 20);
    for(i= 0; i&lt;room_width; i++)
-   {  show_debug_message("test");
+   {  //show_debug_message("test");
       j = room_height/2 + random_range(-50, 50);
       i = i + 5;   
         if (!place_meeting(x+i+offset,y+j+offset,obj_spectator))&amp;&amp; (population_count &lt;= population_size) &amp;&amp; choose (0,1)
         {
             var p = instance_create(x+i+offset+16, y+j+offset+16,obj_spectator) 
             ds_stack_push(population,p);
-            show_debug_message("spawning characher");
+            //show_debug_message("spawning characher");
             population_count++;
             
         }

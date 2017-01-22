@@ -10,9 +10,9 @@ for (var i = 0; i < gp_num; i++;)
         global.gp[i] = false;
     }
 }*/
-if(global.gp[0] == true)
+if(global.gp[1] == true)
 {
-    if(gamepad_axis_value(0, gp_axislh) > 0.2)
+    if(gamepad_axis_value(1, gp_axislh) > 0.2)
     {
         Key_Right = true;
     }
@@ -20,7 +20,7 @@ if(global.gp[0] == true)
     {
         Key_Right = false;
     }
-    if(gamepad_axis_value(0, gp_axislh) < -0.2)
+    if(gamepad_axis_value(1, gp_axislh) < -0.2)
     {
         Key_Left = true;
     }
@@ -29,9 +29,10 @@ if(global.gp[0] == true)
         Key_Left = false;
     }
     //Key_Left = keyboard_check(vk_left);
-    Key_Jump_Hold = gamepad_button_check(0, gp_face1);//keyboard_check(vk_up);
-    Key_Jump = gamepad_button_check_pressed(0, gp_face1);
-    Key_Jump_Released = gamepad_button_check_released(0, gp_face1);
+    Key_Jump_Hold = gamepad_button_check(1, gp_face1);//keyboard_check(vk_up);
+    Key_Jump = gamepad_button_check_pressed(1, gp_face1);
+    Key_Jump_Released = gamepad_button_check_released(1, gp_face1);
+    Key_Dash_Released = gamepad_button_check_released(1, gp_face2);
 }
 else
 {

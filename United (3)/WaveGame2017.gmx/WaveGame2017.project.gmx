@@ -6,7 +6,10 @@
   <NewExtensions>
     <extension index="0">extensions\Essential Scripts</extension>
   </NewExtensions>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\shortWave</sound>
+    <sound>sound\MenuPress</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_walkCycle</sprite>
     <sprite>sprites\spr_playerJmp</sprite>
@@ -68,6 +71,7 @@
     <script>scripts\Input_Set_Player2.gml</script>
     <script>scripts\scr_scareAudience.gml</script>
     <script>scripts\scr_checkAnyGamepadButton.gml</script>
+    <script>scripts\scr_Dash.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_spectator</object>

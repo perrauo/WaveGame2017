@@ -27,6 +27,7 @@ if (place_meeting(x, y+1, obj_Solid)) //landing
 if(!landed)
 {
     my_w = instance_create(x+obj_ParentPlayer.sprite_width/2, y+17, obj_Wave);
+    audio_play_sound(shortWave, 10, false);
     my_w.wave_size = wave_size;
     my_w.Speed = (my_w.Init_Speed*wave_Direction);
     landed = 1;
