@@ -1,6 +1,6 @@
 ///UpdateTimer()
 draw_set_alpha(1);
-draw_set_colour(c_black);
+draw_set_colour(c_white);
 CurrentTime = StartingTime - floor(get_timer()/1000000);
 Minute = floor(CurrentTime/60)
 Second = CurrentTime - (Minute * 60);

@@ -1,4 +1,4 @@
-var gp_num = gamepad_get_device_count();
+/*var gp_num = gamepad_get_device_count();
 for (var i = 0; i < gp_num; i++;)
 {
     if(gamepad_is_connected(i)) 
@@ -9,7 +9,7 @@ for (var i = 0; i < gp_num; i++;)
     { 
         global.gp[i] = false;
     }
-}
+}*/
 if(global.gp[0] == true)
 {
     if(gamepad_axis_value(0, gp_axislh) > 0.2)

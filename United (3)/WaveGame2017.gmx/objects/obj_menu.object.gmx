@@ -74,7 +74,14 @@ instance_deactivate_object(obj_part_1);
           <argument>
             <kind>1</kind>
             <string>///choose an menu option
-key_start = keyboard_check(vk_enter);
+if(global.gp[0] == true)
+{
+    key_start = gamepad_button_check_released(0, gp_face1);;
+}
+else
+{
+    key_start = keyboard_check(vk_enter);
+}
 
 if(key_start)
 {
@@ -87,7 +94,7 @@ switch (selected_item)
    if(key_start)
    {
         instance_activate_all();
-        instance_create(0,0, obj_ctrl_audienceManager);
+        
    }
  
    break;

@@ -94,7 +94,7 @@ if(walking)
             <kind>1</kind>
             <string>///destroy spectator and spawn player
 //color
-
+if(walking)
 instance_destroy();
 </string>
           </argument>
