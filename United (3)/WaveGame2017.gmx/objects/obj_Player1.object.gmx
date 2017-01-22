@@ -91,6 +91,11 @@ if (H_Speed != 0) {
 
 obj_GameManager.Shake = 30;
 
+if(x &gt; 280)
+{
+    Create_Blood(global.Player1_Color, "Right");
+}
+else
 Create_Blood(global.Player1_Color, "Left");
 
 global.Player1_Color = make_color_hsv(random(255), 200, 200);

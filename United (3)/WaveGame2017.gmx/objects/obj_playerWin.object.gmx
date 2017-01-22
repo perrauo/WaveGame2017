@@ -27,6 +27,16 @@
             <kind>1</kind>
             <string>///init
 winner = false;
+
+image_speed = 0;
+
+//timers
+timer1 = 0;
+lim1 = 5;
+
+//shake effect
+text_offset = 0;
+
 </string>
           </argument>
         </arguments>
@@ -58,6 +68,63 @@ else
 {
 image_index = 1;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///timer increment
+if(timer1= lim1)
+{
+    timer1= 0;
+}
+timer1++;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///draw menu item
+
+if (timer1 = lim1)
+{
+    text_offset = random_range(-1,1);
+}
+
+draw_sprite(sprite_index,image_index,x+text_offset,y+text_offset);
 </string>
           </argument>
         </arguments>

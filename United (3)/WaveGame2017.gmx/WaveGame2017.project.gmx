@@ -67,6 +67,7 @@
     <script>scripts\Input_Set_Player1.gml</script>
     <script>scripts\Input_Set_Player2.gml</script>
     <script>scripts\scr_scareAudience.gml</script>
+    <script>scripts\scr_checkAnyGamepadButton.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_spectator</object>
@@ -85,7 +86,6 @@
       <object>objects\obj_Canvas</object>
       <object>objects\obj_BloodDrop</object>
     </objects>
-    <object>objects\Timer</object>
     <objects name="gr_GUI">
       <object>objects\obj_scoreBoard</object>
       <object>objects\obj_menu</object>

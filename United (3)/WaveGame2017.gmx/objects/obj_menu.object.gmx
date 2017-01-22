@@ -32,19 +32,18 @@ selected_item = 0;
 var item1 = instance_create(x-20,y+40, obj_menuItem);
 item1.selection = 0;
 
-var item2 = instance_create(x-20,y+60, obj_menuItem);
+var item2 = instance_create(x-20,y+70, obj_menuItem);
 item2.selection = 1;
 
-var item3 = instance_create(x-20,y+80, obj_menuItem);
-item3.selection = 2;
 
 //create arrow selection
- instance_create(x-40,y+40, obj_menuArrow);
+ instance_create(x-40,y+20, obj_menuArrow);
 
 
 
 //Deactivate a bunch of stuff
 instance_deactivate_object(obj_ParentPlayer);
+instance_deactivate_object(obj_scoreBoard);
 instance_deactivate_object(obj_ctrl_audienceManager);
 instance_deactivate_object(obj_Wave);
 instance_deactivate_object(obj_part_1);
@@ -102,19 +101,12 @@ switch (selected_item)
    case 1:
    if(key_start)
    {
-        
-   }
- 
-   break;
-   case 2:
-   if(key_start)
-   {
-   
+       game_end(); 
    }
  
    break;
    }
-   
+ 
    ///destroy every menu components
    if(key_start)
    {

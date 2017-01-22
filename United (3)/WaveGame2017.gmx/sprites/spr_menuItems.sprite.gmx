@@ -8,7 +8,7 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>106</bbox_right>
+  <bbox_right>65</bbox_right>
   <bbox_top>33</bbox_top>
   <bbox_bottom>63</bbox_bottom>
   <HTile>0</HTile>
@@ -22,6 +22,5 @@
   <frames>
     <frame index="0">images\spr_menuItems_0.png</frame>
     <frame index="1">images\spr_menuItems_1.png</frame>
-    <frame index="2">images\spr_menuItems_2.png</frame>
   </frames>
 </sprite>

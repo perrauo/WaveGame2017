@@ -26,11 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>///init
-START_YPOS = y-20;//constant
+START_YPOS = y;//constant
 target_Ypos = y;
 
 //ref to the menu
 menu = instance_find(obj_menu, 0);
+
+//something important idk
+axisReset = false;
 </string>
           </argument>
         </arguments>
@@ -60,8 +63,8 @@ if(global.gp[0] == true)
 {
       if(gamepad_axis_value(0, gp_axislv) &gt; 0.2) &amp;&amp; (target_reached) &amp;&amp; (axisReset)
       { 
-        target_Ypos+=20;
-        if(menu.selected_item != 2)
+        target_Ypos+=40;
+        if(menu.selected_item != 1)
         {
             menu.selected_item++;
         }
@@ -69,7 +72,7 @@ if(global.gp[0] == true)
       }
       if(gamepad_axis_value(0, gp_axislv) &lt; -0.2) &amp;&amp; (target_reached) &amp;&amp; (axisReset)
       {
-        target_Ypos-=20;
+        target_Ypos-=40;
         if(menu.selected_item != 0)
         {
             menu.selected_item--;
@@ -86,7 +89,7 @@ else
     if(keyboard_check_pressed(vk_down)) &amp;&amp; (target_reached)
     {
         target_Ypos+=20;
-        if(menu.selected_item != 2)
+        if(menu.selected_item != 1)
         menu.selected_item++;
      
     }
@@ -99,7 +102,7 @@ else
     }    
 }
 
-target_Ypos = clamp(target_Ypos, START_YPOS, START_YPOS+40);
+target_Ypos = clamp(target_Ypos, START_YPOS, START_YPOS+35);
 
 //check if target reached
 if(y = target_Ypos)

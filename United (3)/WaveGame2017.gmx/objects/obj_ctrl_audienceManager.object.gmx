@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///init
 population_count = 0;
-population_size = 60;
+population_size = 100;
 population = ds_stack_create(); //create a population
 </string>
           </argument>

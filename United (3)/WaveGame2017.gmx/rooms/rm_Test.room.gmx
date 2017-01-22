@@ -3,8 +3,8 @@
   <caption></caption>
   <width>320</width>
   <height>240</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>8</vsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -57,8 +57,7 @@
     <instance objName="obj_Player1" x="64" y="160" name="inst_65D685C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Player2" x="256" y="160" name="inst_BB3427A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Canvas" x="64" y="0" name="inst_16CCB239" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Timer" x="288" y="0" name="inst_D36E2AD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_menu" x="160" y="128" name="inst_6E55BBDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_menu" x="160" y="120" name="inst_6E55BBDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ctrl_audienceManager" x="0" y="0" name="inst_DED0C1EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_scoreBoard" x="160" y="32" name="inst_E2CBE165" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

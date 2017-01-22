@@ -24,7 +24,7 @@ wave_size = 2; //size 2;
 
 if (place_meeting(x, y+1, obj_Solid)) //landing
 { 
-   if(!landed)
+if(!landed)
 {
     my_w = instance_create(x+obj_ParentPlayer.sprite_width/2, y+17, obj_Wave);
     my_w.wave_size = wave_size;
