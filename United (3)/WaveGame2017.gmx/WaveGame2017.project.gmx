@@ -84,6 +84,7 @@
     <object>objects\obj_spectator</object>
     <object>objects\obj_ctrl_audienceManager</object>
     <object>objects\obj_ParentPlayer</object>
+    <object>objects\obj_fountain</object>
     <object>objects\obj_Solid</object>
     <object>objects\obj_GameManager</object>
     <object>objects\obj_Player2</object>

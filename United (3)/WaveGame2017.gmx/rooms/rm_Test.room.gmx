@@ -61,6 +61,8 @@
     <instance objName="obj_scoreBoard" x="160" y="32" name="inst_E2CBE165" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Solid" x="0" y="-16" name="inst_BD26BB36" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bleacher" x="160" y="140" name="inst_0C8E2E7A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Solid" x="0" y="196" name="inst_6E870F1D" locked="0" code="" scaleX="10.5" scaleY="2.875" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fountain" x="0" y="-16" name="inst_E0E9E44B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
