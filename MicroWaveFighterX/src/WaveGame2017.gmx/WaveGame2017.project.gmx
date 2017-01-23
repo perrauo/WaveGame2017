@@ -82,6 +82,12 @@
     <script>scripts\scr_Dash.gml</script>
     <script>scripts\Collide_With_Player.gml</script>
     <script>scripts\Screen_Shake.gml</script>
+    <scripts name="gr_timers">
+      <scripts name="gr_timers_player">
+        <script>scripts\scr_timer1Event_player.gml</script>
+      </scripts>
+    </scripts>
+    <script>scripts\scr_Landing.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_spectator</object>

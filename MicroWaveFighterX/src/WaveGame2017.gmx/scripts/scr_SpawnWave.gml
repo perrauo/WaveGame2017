@@ -30,7 +30,7 @@ if(!landed)
     audio_play_sound(shortWave, 10, false);
     my_w.wave_size = wave_size;
     my_w.Speed = (my_w.Init_Speed*wave_Direction);
-    landed = 1;
+    
 }
        
 }
