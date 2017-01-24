@@ -180,15 +180,15 @@ switch (Animation_State) { //event_user(0) stops the animation after it played
     break
     
      case Animation_States.JUMPING: //jmp
-    sprite_index = spr_playerSlam;
-     image_speed = .8; 
+    sprite_index = spr_playerJmp;
+     image_speed = .5; 
     event_user(0);
   
     break
     
      case Animation_States.SLAMMING: //slam
     sprite_index = spr_playerSlam;
-     image_speed = .8; 
+     image_speed = .5; 
     event_user(0);
   
     break

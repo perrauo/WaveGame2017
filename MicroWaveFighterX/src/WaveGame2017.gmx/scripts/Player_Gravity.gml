@@ -45,7 +45,7 @@ if (Key_Jump and Num_Jumps < Max_Jumps) //Jumping
     V_Speed = -Jump_Force;
     Num_Jumps++;
       //reset jump animation
-     Animation_State = Animation_States.JUMPING;
+     Animation_State = Animation_States.SLAMMING;
     }
     
     
